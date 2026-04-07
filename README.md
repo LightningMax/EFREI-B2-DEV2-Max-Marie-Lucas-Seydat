@@ -18,3 +18,13 @@
 |       Créer         |   POST  |      ``/api/tasks``     |
 |       Update        |   PUT   |    ``/api/tasks/:id``   |
 |      Supprimer      |  DELETE |    ``/api/tasks/:id``   |
+
+
+## Architecture Bdd
+┌──────────────────────────────────┐
+│              Task                │
+├──────────────────────────────────┤
+│ title : String (required)        │
+│ description : String             │
+│ done  : Boolean (default: false) │
+└──────────────────────────────────┘
