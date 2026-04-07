@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ma Todo List</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        max-width: 400px;
+        margin: 50px auto;
+      }
+      .todo-container {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .todo-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+        background: white;
+        border: 1px solid #ddd;
+      }
+      .done {
+        text-decoration: line-through;
+        color: gray;
+      }
+      input {
+        padding: 8px;
+        width: 70%;
+      }
+      button {
+        padding: 8px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h2>To-Do List</h2>
+      <div>
+        <input type="text" id="todo-input" placeholder="Ajouter une tâche..." />
+        <button onclick="addTodo()">Ajouter</button>
+      </div>
+      <ul
+        id="todo-list"
+        style="list-style: none; padding: 0; margin-top: 20px"
+      ></ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
